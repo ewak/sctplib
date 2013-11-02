@@ -35,4 +35,4 @@ localcom_SOURCES = localcom.c sctp_wrapper.c
 localcom_LDADD =  ../sctp/libsctplib.la
 
 
-INCLUDES = -I$(srcdir)/../sctp
+AM_CPPFLAGS = -I$(srcdir)/../sctp
