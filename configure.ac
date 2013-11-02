@@ -5,6 +5,7 @@
 AC_INIT([sctplib], [1.0.14~rc2])
 AC_CONFIG_SRCDIR([sctplib/programs/discard_server.c])
 AC_CONFIG_AUX_DIR(admin)
+AC_CONFIG_MACRO_DIR([admin])
 AC_CANONICAL_HOST
 AM_INIT_AUTOMAKE
 
@@ -18,6 +19,7 @@ AM_CONFIG_HEADER(config.h)
 
 # ###### Checks for programs ################################################
 AC_PROG_CC
+AC_ENABLE_STATIC
 AC_PROG_LIBTOOL
 
 # ###### Compiler checks ####################################################
